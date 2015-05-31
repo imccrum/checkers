@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">Checkers</string>
+    <string name="set_username_hint">enter a username</string>
+    <string name="chat_hint">enter a messsage</string>
+    <string name="button_refresh">REFRESH</string>
+    <string name="button_send">SUBMIT</string>
+    <string name="chat_send">Send</string>
+    <string name="local_button_message">Play Online</string>
+    <string name="remote_button_message">Play Offline</string>
+    <string name="main_page_heading">CHECKERS</string>
+    <string name="title_activity_game">Checkers</string>
+    <string name="title_activity_setup">Checkers</string>
+
+    <color name="black">#111111</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="green">#66FF33</color>
+    <color name="lightblue">#99CCFF</color>
+    <color name="lightbrown">#FFFFCC</color>
+    <color name="purple">#DBB8FF</color>
+    <color name="darkbrown">#FFCC66</color>
+
+</resources>

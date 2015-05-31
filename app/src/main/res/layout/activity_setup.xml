@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:animateLayoutChanges="true"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/header_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/header_msg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/login_signup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+
+                android:id="@+id/header_msg_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/online_status"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:text="Login / Sign up"/>
+
+            <TextView
+                android:id="@+id/online_status"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="20sp"
+                android:background="@drawable/grey_circle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+              android:id="@+id/list_users"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1">
+
+            <Button
+                android:id="@+id/users_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/num_users"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:text="Find opponent" />
+
+            <TextView
+                android:id="@+id/num_users"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="20sp"
+                android:background="@drawable/grey_circle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+              android:id="@+id/list_requests"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1">
+
+            <Button
+                android:id="@+id/requests_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/num_req"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:text="Your requests" />
+
+            <TextView
+                android:id="@+id/num_req"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="20sp"
+                android:background="@drawable/grey_circle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+              android:id="@+id/list_games"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <Button
+                android:id="@+id/games_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/num_games"
+                android:layout_marginRight="2dp"
+                android:layout_centerVertical="true"
+                android:text="Current games" />
+
+            <TextView
+                android:id="@+id/num_games"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="20sp"
+                android:background="@drawable/grey_circle" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
